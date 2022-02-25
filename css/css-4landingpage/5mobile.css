@@ -1,0 +1,18 @@
+#navbar{
+    flex-direction: column;
+    padding: 0.5rem 0;
+    overflow: hidden;
+    height: 90px;
+}
+
+#youtube .items{
+    flex-direction: column;
+}
+
+#youtube .items .item{
+    width: 100%;
+}
+
+.discord-links .discord-link{
+    flex-direction: column;
+}

@@ -1,0 +1,9 @@
+conts-var-> bir şeyi tanıtmak-tanımlamak
+if->eğer böyle olursa 
+catch->hata aktarımı-yansıtımı
+then-> .then farklı  
+return-> bir komudu yazdıktan sonra
+require->gerektirir
+chalk.red->mesajı kırmızıya boyar
+cmd'de node index.js ile botu aktif hale getirirsin-offline olması için ctrl+c
+module.exports ->modülü dışa aktar

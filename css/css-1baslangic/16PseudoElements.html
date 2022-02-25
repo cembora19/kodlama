@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo Element</title>
+    <style>
+        .money1{
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+        }
+
+        /* .money1::first-line{
+            color: bisque;
+        }
+        .money1::first-letter{
+            color: aquamarine;
+            font-size: 1.5em;
+        } */
+        .money1::after{
+            content: url("https://i.pinimg.com/474x/74/e1/88/74e1888bcc1120ff17783d4bbab4ab05.jpg");
+        }
+        
+        .money1::before{
+            content: "Paragraf Öncesi";
+        }
+    </style>
+</head>
+<body>
+    <p class="money1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eum deserunt repellendus doloribus distinctio atque laboriosam minus, blanditiis quisquam provident consequatur soluta quam obcaecati accusantium eligendi. Tenetur qui eius blanditiis provident quasi temporibus illum, accusamus quis corporis? Delectus deleniti harum impedit vitae voluptatibus sapiente enim aliquam placeat ab consectetur officia, quo facilis atque ea odio sint quis labore totam soluta eveniet debitis dolorem vel minima. Expedita ipsa, quas deserunt quisquam odio quo ad deleniti error. Omnis eos dolorem accusantium corporis? Fuga voluptatum aliquam porro error, dignissimos tenetur deleniti illum quasi esse dolore obcaecati quisquam culpa pariatur unde labore eligendi deserunt!
+
+    </p>
+</body>
+</html>

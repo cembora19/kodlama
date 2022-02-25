@@ -1,0 +1,10 @@
+#navbar{
+    flex-direction: column;
+    padding: 0.5rem 0;
+    overflow: hidden;
+    height: 90px;
+}
+
+#home a{
+   display:flex
+}

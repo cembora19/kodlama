@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Styling</title>
+    <style>
+       table,tr,th,td{
+           border: 1px solid bisque;
+           border-collapse: collapse;
+       } 
+       table{
+           width: 50%;
+           margin-left: auto;
+           margin-right: auto;
+           font-size: 1.5em;
+       }
+       th,td{
+           padding: 10px;
+       }
+       thead tr{
+           background-color: aquamarine;
+           color: silver;
+       }
+       tbody tr{
+           text-align: center;
+       }
+       tbody tr:nth-child(odd){
+           background: #d3d3d3;
+       }
+       tbody tr:hover{
+           background: coral;
+       }
+    </style>
+</head>
+<body>
+
+    <div class="tablo">
+        <table class="table1">
+            <thead>
+                <tr>
+                    <th>Gereken Malzemeler</th>
+                    <th>Miktar</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Kuzu İncik</td>
+                    <td>2 Adet</td>
+
+                </tr>
+                <tr>
+                    <td>Tereyağı</td>
+                    <td>1 Çorba Kaşığı</td>
+
+                </tr>
+                <tr>
+                    <td>Arpacık Soğan</td>
+                    <td>1 Kase</td>
+
+                </tr>
+                <tr>
+                    <td>Havuç</td>
+                    <td>1 Adet</td>
+
+                </tr>
+                <tr>
+                    <td>Patates</td>
+                    <td>1 Kase</td>
+
+                </tr>
+                <tr>
+                    <td>Tuz / Karabibez</td>
+                    <td>Kullanıma Bağlı</td>
+                </tr>
+                <tr>
+                    <td>Taze Biberiye</td>
+                    <td>1 Dal</td>
+                </tr>
+            </tbody>
+
+
+        </table>
+
+        <table class="table2">
+            <thead>
+                <tr>
+                    <th>Terbiyesi İçin</th>
+                    <th>Miktar</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Un</td>
+                    <td>1 Tatlı Kaşığı</td>
+
+                </tr>
+                <tr>
+                    <td>Yumurta Sarısı</td>
+                    <td>1 Adet</td>
+
+                </tr>
+                <tr>
+                    <td>Limon</td>
+                    <td>1/2(Yarım) Adet</td>
+
+                </tr>
+            </tbody>
+
+
+        </table>
+
+        <table class="table3">
+            <thead>
+                <tr>
+                    <th>Servis Malzemeleri</th>
+                    <th>Miktar</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Çekilmiş Toz Karabiber</td>
+                    <td>Kullanıma Bağlı</td>
+
+                </tr>
+                <tr>
+                    <td>Kıyılmış Maydonoz</td>
+                    <td>1 Avuç</td>
+
+                </tr>
+
+            </tbody>
+
+
+        </table>
+    </div>
+
+</body>
+</html>
