@@ -1,4 +1,4 @@
-from question_model import Question
+from python.day17quizGame.question_model import Question
 from data import question_data
 from quiz_brain import QuizBrain
 
@@ -12,6 +12,6 @@ for question in question_data:
 quiz= QuizBrain(question_bank)
 while quiz.still_has_questions():#if quiz still has questions remaining
     quiz.next_question()
-if quiz.question_number==12:#aslında burayı yazmana gerek yokta silmeye üşendim
+if quiz.question_number==12:#aslinda burayi yazmana gerek yokta silmeye usendim
     print("You've completed the quiz.")
     print(f"Your final score was: {quiz.score}/{quiz.question_number}")
