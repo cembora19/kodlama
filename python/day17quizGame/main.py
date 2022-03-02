@@ -1,7 +1,6 @@
 from python.day17quizGame.question_model import Question
 from data import question_data
 from quiz_brain import QuizBrain
-from day14HigherLower.art import logo
 
 question_bank=[]
 for question in question_data:
