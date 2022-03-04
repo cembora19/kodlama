@@ -1,22 +1,11 @@
-import csv
-from turtle import *
-from numpy import imag #screen turtle
+import random
+from turtle import *#screen turtle
 tim=Turtle()
 screen=Screen()
 tim.shape("turtle")
 tim.color("medium purple")
 tim.speed(4)
-# for _ in range(4):
-#     tim.forward(100)
-#     tim.right(90)
-# tim.left(90)
-# tim.forward(10)
-# tim.right(90)
-# for _ in range(20):
-#     tim.forward(10)
-#     tim.penup()
-#     tim.forward(10)
-#     tim.pendown()
+
 angle=360
 polygon=3
 exterior_angle=0
