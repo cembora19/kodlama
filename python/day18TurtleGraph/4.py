@@ -5,7 +5,7 @@ tim=Turtle()
 screen=Screen()
 tim.shape("turtle")
 # tim.color("medium purple")
-tim.speed(4)
+tim.speed(8)
 tim.pensize(15)
 t.colormode(255)
 def random_color():
