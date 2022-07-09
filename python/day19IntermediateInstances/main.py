@@ -1,7 +1,7 @@
 from turtle import Turtle, Screen
 tim=Turtle()
 screen=Screen()
-#bir fonksiyonun parametresinin içine başka bir fonksiyonu yazarsan içine yazdığın fonksiyonun pazantezini koymazsın
+
 def move_forwards():
     tim.forward(10)
 def move_backwards():
@@ -10,13 +10,14 @@ def move_left():
     new_heading=tim.heading()+10
     tim.setheading(new_heading)
 def move_right():
-    new_heading=tim.heading()-10
-    tim.setheading(new_heading)
+     new_heading=tim.heading()-10
+     tim.setheading(new_heading)
 def clear():
     tim.clear()
     tim.penup()
     tim.home()
     tim.pendown()
+
 screen.listen()
 screen.onkey(fun=move_forwards, key="w")
 screen.onkey(fun=move_backwards, key="s")
