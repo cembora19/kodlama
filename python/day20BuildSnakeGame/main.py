@@ -1,6 +1,5 @@
-import secrets
 from tracemalloc import start, stop
-from turtle import Screen, forward, tracer, xcor
+from turtle import Screen, Turtle, forward, tracer, xcor
 import time
 
 from requests import head
@@ -17,6 +16,8 @@ screen.tracer(0)
 snake=Snake()
 food=Food()
 scoreboard=Scoreboard()
+snake_speed=0.2
+
 
 screen.listen()
 screen.onkey(snake.up, "w")
@@ -27,7 +28,7 @@ screen.onkey(snake.right, "d")
 game_is_on=True
 while game_is_on:
     screen.update()
-    time.sleep(0.1)
+    time.sleep(snake_speed)
     snake.move()
 
     #detect collision with food
@@ -35,6 +36,9 @@ while game_is_on:
         food.refresh()
         snake.extend()
         scoreboard.increase_score()
+        if snake_speed==0.03:
+            snake_speed+=0.01
+        snake_speed-=0.01
     
     #detect collision with wall
     if snake.head.xcor() > 295 or snake.head.xcor() < -295 or snake.head.ycor() >295  or snake.head.ycor() < -295:
