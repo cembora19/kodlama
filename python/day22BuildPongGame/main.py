@@ -13,7 +13,7 @@ screen.tracer(0)
 
 r_paddle=Paddle((350,0))
 l_paddle=Paddle((-350,0))
-ball=Ball((0, 0))
+ball=Ball()
 scoreboard=Scoreborad()
 
 screen.listen()
